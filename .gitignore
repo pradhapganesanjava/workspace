@@ -1,0 +1,43 @@
+#Ignore CVS files anywhere
+CVS/
+.cvsignore
+
+#Ignore these top level folders
+/Servers/*
+
+#Ignore these folders anywhere
+target/
+deploy/
+bin/
+
+#Eclipse folders
+.settings/
+.metadata/
+.classpath
+.project
+
+#go figure...
+/.z
+/.gitk
+/.bash_history
+
+#Ignore there files, anywhere
+Thumbs.db
+*.class
+*.orig
+*.bak
+*.log
+*.war
+*\.BACKUP\.*
+*\.BASE\.*
+*\.REMOTE\.*
+*\.LOCAL\.*
+.DS_Store
+
+#Dreamweaver Files
+dwsync.xml
+_compareTemp/
+
+#Idea IntelliJ Filed
+*.iml
+.idea/
