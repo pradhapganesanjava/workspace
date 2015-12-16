@@ -13,8 +13,8 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.transform.Result;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.fasterxml.jackson.core.JsonProcessingException;
+//import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pg.rest.book.bo.CatalogBo;
 
 @Path("/catalog")
@@ -68,7 +68,7 @@ public class Catalog {
 			}catch(JAXBException e){
 				e.printStackTrace();
 			}
-		}else if(null != mType && "json".equalsIgnoreCase(mType)){
+		}else if(null != mType && "json".equalsIgnoreCase(mType)){/*
 			ObjectMapper objMapper = new ObjectMapper();
 			String catBoInJsonStr = "N/A";
 			try{
@@ -79,7 +79,7 @@ public class Catalog {
 			System.out.println("json return : "+catBoInJsonStr);
 			return catBoInJsonStr;
 
-		}else{
+		*/}else{
 			System.out.println("toString return : "+catalogBo.toString());
 			return catalogBo.toString();
 		}

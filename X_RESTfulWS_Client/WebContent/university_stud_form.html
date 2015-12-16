@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>University</title>
+</head>
+
+<body>
+
+
+	<form
+		action="http://localhost:8020/X_RESTfulWS/university/departsearch"
+		method="post">
+		<h1>Find University Departments Info</h1>
+		<p>
+			<b>Department Name:</b><input type="text" name="departname" />
+		</p>
+		<p>
+			<b>Department Id:</b><input type="text" name="departid" />
+		</p>
+		<input type="submit" value="Search" />
+	</form>
+	<h3>Downloads</h3>
+	<p>
+		<a href="http://localhost:8020/X_RESTfulWS/university/down_rawfile">Download
+			RAW file</a>
+	</p>
+	<br>
+	<p>
+		<a href="http://localhost:8020/X_RESTfulWS/university/down_resfile">Download
+			Response file</a>
+	</p>
+	<form method="post"
+		action="http://localhost:8020/X_RESTfulWS/university/upload_txt" enctype="multipart/form-data">
+		<table width="100%" border=0>
+			<tr >
+				<td width="10%" align="left">
+					<h3>Uploads</h3>
+				</td>
+				<td width="40%"/>
+				<td width="30%"/>
+			</tr>
+			<tr>
+				<td width="10%" />
+				<td width="40%" align="left">
+					<label for="upldtxtfile">Upload Text File</label> 
+					<input type="file" name="upldtxtfile" /><br>
+					<input type="submit" value="Upload" />
+				</td>
+				<td width="30%"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
