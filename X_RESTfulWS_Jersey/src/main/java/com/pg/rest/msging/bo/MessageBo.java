@@ -1,6 +1,7 @@
 package com.pg.rest.msging.bo;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -12,6 +13,8 @@ public class MessageBo {
 	private String message;
 	private Date createdDt;
 	private String createdBy;
+	
+	private List<CommentBo> commentBo;
 	
 	public MessageBo() {
 	}
@@ -54,4 +57,15 @@ public class MessageBo {
 		this.createdBy = createdBy;
 	}
 
+	public List<CommentBo> getCommentBo() {
+		return commentBo;
+	}
+
+	public void setCommentBo(List<CommentBo> commentBo) {
+		this.commentBo = commentBo;
+	}
+	public MessageBo addCommentBo(List<CommentBo> commentBo) {
+		this.commentBo = commentBo;
+		return this;
+	}
 }

@@ -5,19 +5,19 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import com.pg.rest.msging.bo.CommentBo;
 import com.pg.rest.msging.bo.MessageBo;
 
 public class MessageDao {
 
 	private static List<MessageBo> msgList = null;
-
 	
 	static{
 		msgList = new ArrayList<MessageBo>(0);
 		msgList.add(new MessageBo(1, "Helloooo :) !!", new Date(Calendar.getInstance()
-				.getTimeInMillis()), "pradhap"));
+				.getTimeInMillis()), "pradhap").addCommentBo(CommentDao.getComments()));
 		msgList.add(new MessageBo(2, "Hi !!!",
-				new Date(Calendar.getInstance().getTimeInMillis()), "ganesan"));	
+				new Date(Calendar.getInstance().getTimeInMillis()), "ganesan").addCommentBo(CommentDao.getComments()));	
 			
 	}
 	

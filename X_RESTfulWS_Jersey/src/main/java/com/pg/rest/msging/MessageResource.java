@@ -19,18 +19,18 @@ import com.pg.rest.msging.service.MessageService;
 public class MessageResource {
 
 	MessageService msgService = new MessageService();
-	
+
 	@GET
 	@Produces(MediaType.TEXT_XML+","+MediaType.APPLICATION_JSON)
 	public List<MessageBo> getMessages() {
 		return msgService.getMessages();
 	}
-	
 	@GET
 	@Path("/{msgId}")
 	@Produces(MediaType.TEXT_XML+","+MediaType.APPLICATION_JSON)
 	public MessageBo getMessage(@PathParam("msgId") long Id){
-		return msgService.getMessage(Id);
+		MessageBo msgBo =msgService.getMessage(Id); 
+		return msgBo;
 	}
 	
 	@POST
@@ -57,5 +57,12 @@ public class MessageResource {
 	@Consumes(MediaType.TEXT_XML+","+MediaType.APPLICATION_JSON)
 	public List<MessageBo> deleteMessage(@PathParam("msgId") long Id){
 		return msgService.removeMessage(Id);
+	}
+
+	
+	
+	@Path("/{msgId}/comments")
+	public CommentResource takeMeToCommentRes(){
+		return new CommentResource(msgService);
 	}
 }

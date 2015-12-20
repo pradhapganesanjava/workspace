@@ -3,6 +3,9 @@ package com.pg.rest.params;
 import javax.ws.rs.MatrixParam;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
+import javax.ws.rs.core.UriInfo;
 
 public class BeanParameter {
 	
@@ -10,6 +13,10 @@ public class BeanParameter {
 	private @QueryParam("all") boolean isAll;
 	private @MatrixParam("start") int start;
 	private @MatrixParam("count") int count;
+	
+	private @Context UriInfo uriInfo;
+	private @Context HttpHeaders httpHead;
+	
 	public String getParamType() {
 		return paramType;
 	}
@@ -33,6 +40,18 @@ public class BeanParameter {
 	}
 	public void setCount(int count) {
 		this.count = count;
+	}
+	public UriInfo getUriInfo() {
+		return uriInfo;
+	}
+	public HttpHeaders getHttpHead() {
+		return httpHead;
+	}
+	public void setUriInfo(UriInfo uriInfo) {
+		this.uriInfo = uriInfo;
+	}
+	public void setHttpHead(HttpHeaders httpHead) {
+		this.httpHead = httpHead;
 	}
 	
 	

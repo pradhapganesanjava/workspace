@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.pg.rest.msging.bo.MessageBo;
 import com.pg.rest.msging.dao.MessageDao;
+import com.pg.rest.msging.exception.DataNotFoundException;
 
 public class MessageService {
 
@@ -17,13 +18,16 @@ public class MessageService {
 		return msgList;
 	}
 
+	
+	
 	public MessageBo getMessage(long Id) {
 		for(MessageBo msgBo : msgList){
 			if(msgBo.getId() == Id){
 				return msgBo;
 			}
 		}
-		return null;
+		System.out.println("throwing new exception DataNotFoundException 223");
+		throw new DataNotFoundException("data not found for id "+Id);
 	}
 
 	public List<MessageBo> addMessage(MessageBo msgBo) {
