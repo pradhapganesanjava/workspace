@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="basics1" size="1364,1601" id="com.pg.ws.basics" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020585F57535F534F4150436C69656E74">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="HelloProxy" location="675,210" size="112,139" id="com.pg.ws.basics/HelloProxy">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="86,90">
+      <children xsi:type="editmodel:MethodEditModel" name="HelloProxy" id="com.pg.ws.basics/HelloProxy#HelloProxy()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="HelloProxy" id="com.pg.ws.basics/HelloProxy#HelloProxy(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEndpoint" id="com.pg.ws.basics/HelloProxy#getEndpoint()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sayHello" id="com.pg.ws.basics/HelloProxy#sayHello(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEndpoint" id="com.pg.ws.basics/HelloProxy#setEndpoint(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.pg.ws.basics/Hello&lt;-com.pg.ws.basics/HelloProxy" source="//@children.0" target="//@children.3/@sourceConnections.0" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="56,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.pg.ws.basics/HelloProxy-Standard::Call->com.pg.ws.basics/HelloServiceLocator*com.pg.ws.basics/HelloProxy-Standard::Instantiate->com.pg.ws.basics/HelloServiceLocator" source="//@children.0" target="//@children.4" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Instantiate»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,109" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,82"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.pg.ws.basics/HelloProxy-Standard::Call->com.pg.ws.basics/Hello*com.pg.ws.basics/HelloProxy-Soyatec::Import->com.pg.ws.basics/Hello*com.pg.ws.basics/HelloProxy-Soyatec::Implement->com.pg.ws.basics/Hello" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.2/@children.2" label="//@children.0/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Implement, Import»" size="117,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,14" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,81"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.5/@sourceConnections.0 //@children.0/@sourceConnections.2 //@children.3/@sourceConnections.1 //@children.4/@sourceConnections.2" name="Hello" location="407,157" size="94,81" id="com.pg.ws.basics/Hello">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="71,18">
+      <children xsi:type="editmodel:MethodEditModel" name="sayHello" id="com.pg.ws.basics/Hello#sayHello(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.pg.ws.basics/Hello@hello+com.pg.ws.basics/HelloService@" source="//@children.1" target="//@children.5" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="hello" location="0,71" id="com.pg.ws.basics/Hello@hello+com.pg.ws.basics/HelloService@|com.pg.ws.basics/Hello#hello" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" + hello" location="366,207" size="34,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="382,235" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="140,50" id="com.pg.ws.basics/Hello@hello+com.pg.ws.basics/HelloService@|com.pg.ws.basics/HelloService#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.pg.ws.basics/Hello@hello+com.pg.ws.basics/HelloProxy@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="hello" location="94,66" id="com.pg.ws.basics/Hello@hello+com.pg.ws.basics/HelloProxy@|com.pg.ws.basics/Hello#hello" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - hello" location="508,202" size="32,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="508,230" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,13" id="com.pg.ws.basics/Hello@hello+com.pg.ws.basics/HelloProxy@|com.pg.ws.basics/HelloProxy#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="java.rmi/Remote&lt;-com.pg.ws.basics/Hello" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.2/@children.1" sourceEnd="//@children.1/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="46,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="45,57"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.1/@sourceConnections.2" name="Remote" location="408,50" size="91,57" id="java.rmi/Remote">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.1" name="HelloSoapBindingStub" location="750,465" size="208,139" id="com.pg.ws.basics/HelloSoapBindingStub">
+    <children xsi:type="editmodel:CompartmentEditModel" size="185,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="_operations" id="com.pg.ws.basics/HelloSoapBindingStub#_operations"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="135,72">
+      <children xsi:type="editmodel:MethodEditModel" name="HelloSoapBindingStub" id="com.pg.ws.basics/HelloSoapBindingStub#HelloSoapBindingStub(Ljava.net.URL;Ljavax.xml.rpc.Service;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="HelloSoapBindingStub" id="com.pg.ws.basics/HelloSoapBindingStub#HelloSoapBindingStub()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="HelloSoapBindingStub" id="com.pg.ws.basics/HelloSoapBindingStub#HelloSoapBindingStub(Ljavax.xml.rpc.Service;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sayHello" id="com.pg.ws.basics/HelloSoapBindingStub#sayHello(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.0/@sourceConnections.0" autoLocated="true" id="com.pg.ws.basics/Hello&lt;-com.pg.ws.basics/HelloSoapBindingStub" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="17,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="55,81" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.pg.ws.basics/HelloSoapBindingStub-Soyatec::Implement->com.pg.ws.basics/Hello" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Implement»" size="59,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="22,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="94,80"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.1" name="HelloServiceLocator" location="50,542" size="193,301" id="com.pg.ws.basics/HelloServiceLocator">
+    <children xsi:type="editmodel:CompartmentEditModel" size="170,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="helloWSDDServiceName" id="com.pg.ws.basics/HelloServiceLocator#helloWSDDServiceName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="151,234">
+      <children xsi:type="editmodel:MethodEditModel" name="HelloServiceLocator" id="com.pg.ws.basics/HelloServiceLocator#HelloServiceLocator(Lorg.apache.axis.EngineConfiguration;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="HelloServiceLocator" id="com.pg.ws.basics/HelloServiceLocator#HelloServiceLocator()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="HelloServiceLocator" id="com.pg.ws.basics/HelloServiceLocator#HelloServiceLocator(Ljava.lang.String;Ljavax.xml.namespace.QName;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHello" id="com.pg.ws.basics/HelloServiceLocator#getHello()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHello" id="com.pg.ws.basics/HelloServiceLocator#getHello(Ljava.net.URL;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHelloAddress" id="com.pg.ws.basics/HelloServiceLocator#getHelloAddress()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPort" id="com.pg.ws.basics/HelloServiceLocator#getPort(Ljava.lang.Class;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPort" id="com.pg.ws.basics/HelloServiceLocator#getPort(Ljavax.xml.namespace.QName;Ljava.lang.Class;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPorts" id="com.pg.ws.basics/HelloServiceLocator#getPorts()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="com.pg.ws.basics/HelloServiceLocator#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEndpointAddress" id="com.pg.ws.basics/HelloServiceLocator#setEndpointAddress(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEndpointAddress" id="com.pg.ws.basics/HelloServiceLocator#setEndpointAddress(Ljavax.xml.namespace.QName;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setHelloEndpointAddress" id="com.pg.ws.basics/HelloServiceLocator#setHelloEndpointAddress(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="com.pg.ws.basics/HelloService&lt;-com.pg.ws.basics/HelloServiceLocator" source="//@children.4" target="//@children.5" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="96,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.pg.ws.basics/HelloServiceLocator-Standard::Call->com.pg.ws.basics/HelloSoapBindingStub*com.pg.ws.basics/HelloServiceLocator-Standard::Instantiate->com.pg.ws.basics/HelloSoapBindingStub*com.pg.ws.basics/HelloServiceLocator-Soyatec::Import->com.pg.ws.basics/HelloSoapBindingStub" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Instantiate, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,31" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,108"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.pg.ws.basics/HelloServiceLocator-Soyatec::Import->com.pg.ws.basics/Hello" source="//@children.4" target="//@children.1" targetEnd="//@children.4/@sourceConnections.2/@children.2" label="//@children.4/@sourceConnections.2/@children.0" sourceEnd="//@children.4/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="189,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="21,81"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.pg.ws.basics/HelloServiceLocator-Soyatec::Implement->com.pg.ws.basics/HelloService" source="//@children.4" target="//@children.5" targetEnd="//@children.4/@sourceConnections.3/@children.2" label="//@children.4/@sourceConnections.3/@children.0" sourceEnd="//@children.4/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Implement»" size="59,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,99"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.4/@sourceConnections.3 //@children.1/@sourceConnections.0" name="HelloService" location="76,393" size="140,99" id="com.pg.ws.basics/HelloService">
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="helloAddress" id="com.pg.ws.basics/HelloService#helloAddress"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getHello" id="com.pg.ws.basics/HelloService#getHello(Ljava.net.URL;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="com.pg.ws.basics/HelloService-Soyatec::Import->com.pg.ws.basics/Hello" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="132,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,77"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="javax.xml.rpc/Service&lt;-com.pg.ws.basics/HelloService" source="//@children.5" target="//@children.6" targetEnd="//@children.5/@sourceConnections.1/@children.1" sourceEnd="//@children.5/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,293" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.5/@sourceConnections.1" name="Service" location="53,50" size="187,293" id="javax.xml.rpc/Service">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="164,216">
+      <children xsi:type="editmodel:MethodEditModel" name="createCall" id="javax.xml.rpc/Service#createCall()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createCall" id="javax.xml.rpc/Service#createCall(Ljavax.xml.namespace.QName;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createCall" id="javax.xml.rpc/Service#createCall(Ljavax.xml.namespace.QName;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createCall" id="javax.xml.rpc/Service#createCall(Ljavax.xml.namespace.QName;Ljavax.xml.namespace.QName;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCalls" id="javax.xml.rpc/Service#getCalls(Ljavax.xml.namespace.QName;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHandlerRegistry" id="javax.xml.rpc/Service#getHandlerRegistry()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPort" id="javax.xml.rpc/Service#getPort(Ljava.lang.Class;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPort" id="javax.xml.rpc/Service#getPort(Ljavax.xml.namespace.QName;Ljava.lang.Class;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPorts" id="javax.xml.rpc/Service#getPorts()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getServiceName" id="javax.xml.rpc/Service#getServiceName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTypeMappingRegistry" id="javax.xml.rpc/Service#getTypeMappingRegistry()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWSDLDocumentLocation" id="javax.xml.rpc/Service#getWSDLDocumentLocation()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
