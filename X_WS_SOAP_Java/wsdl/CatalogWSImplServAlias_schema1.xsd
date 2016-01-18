@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://servlet.ws.pg.com/" xmlns:tns="http://servlet.ws.pg.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="getTitle" type="tns:getTitle"/>
+
+  <xs:element name="getTitleResponse" type="tns:getTitleResponse"/>
+
+  <xs:complexType name="getTitle">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getTitleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

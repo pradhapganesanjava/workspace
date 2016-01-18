@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://exposews.servlet.ws.pg.com/" xmlns:tns="http://exposews.servlet.ws.pg.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="childM1" type="tns:childM1"/>
+
+  <xs:element name="childM1Response" type="tns:childM1Response"/>
+
+  <xs:element name="childWSImplMethod" type="tns:childWSImplMethod"/>
+
+  <xs:element name="childWSImplMethodResponse" type="tns:childWSImplMethodResponse"/>
+
+  <xs:element name="oneLevel" type="tns:oneLevel"/>
+
+  <xs:element name="oneLevelResponse" type="tns:oneLevelResponse"/>
+
+  <xs:element name="twoLevel" type="tns:twoLevel"/>
+
+  <xs:element name="twoLevelResponse" type="tns:twoLevelResponse"/>
+
+  <xs:complexType name="twoLevel">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="twoLevelResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="oneLevel">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="oneLevelResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="childWSImplMethod">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="childWSImplMethodResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="childM1">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="childM1Response">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
+

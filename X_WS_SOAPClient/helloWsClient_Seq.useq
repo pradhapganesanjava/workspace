@@ -5,107 +5,203 @@
     autoSize="true">    
     <position height="-1" width="-1" x="636" y="0"/>    
     <execution id="2">      
-      <position height="939" width="82" x="5" y="200"/>    
+      <position height="2162" width="82" x="5" y="200"/>    
     </execution>    
     <execution id="5">      
       <position height="63" width="82" x="5" y="99"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="2278"/>    
     </execution>  
   </object>  
-  <object id="8" language="java" name="com.pg.ws.basics.HelloProxy" project="X_WS_SOAPClient" 
+  <object id="9" language="java" name="com.pg.ws.basics.HelloProxy" project="X_WS_SOAPClient" 
     file="/X_WS_SOAPClient/src/com/pg/ws/basics/HelloProxy.java" binary="false" label="helloProxy" type="class" 
     autoSize="true">    
     <position height="-1" width="-1" x="453" y="0"/>    
     <execution id="4">      
-      <position height="897" width="82" x="91" y="221"/>    
+      <position height="2120" width="82" x="91" y="221"/>    
     </execution>    
-    <execution id="10">      
-      <position height="805" width="0" x="0" y="292"/>    
+    <execution id="11">      
+      <position height="721" width="0" x="0" y="292"/>    
     </execution>    
-    <execution id="19">      
+    <execution id="16">      
       <position height="84" width="82" x="91" y="78"/>    
     </execution>    
-    <execution id="21">      
+    <execution id="18">      
       <position height="21" width="82" x="91" y="120"/>    
     </execution>    
     <execution id="7">      
       <position height="21" width="82" x="91" y="120"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="1265" width="82" x="91" y="1055"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="1077" width="0" x="0" y="1107"/>    
     </execution>  
   </object>  
-  <object id="22" language="java" name="com.pg.ws.basics.HelloServiceLocator" project="X_WS_SOAPClient" 
+  <object id="26" language="java" name="com.pg.ws.basics.HelloServiceLocator" project="X_WS_SOAPClient" 
     file="/X_WS_SOAPClient/src/com/pg/ws/basics/HelloServiceLocator.java" binary="false" type="class" autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="12">      
-      <position height="21" width="0" x="0" y="323"/>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="1138"/>    
     </execution>  
   </object>  
-  <object id="23" language="java" name="com.pg.ws.basics.HelloServiceLocator" project="X_WS_SOAPClient" 
+  <object id="27" language="java" name="com.pg.ws.basics.HelloServiceLocator" project="X_WS_SOAPClient" 
     file="/X_WS_SOAPClient/src/com/pg/ws/basics/HelloServiceLocator.java" binary="false" type="class" autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="14">      
+    <execution id="25">      
+      <position height="983" width="0" x="0" y="1180"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="878" width="0" x="0" y="1264"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="1400"/>    
+    </execution>  
+  </object>  
+  <object id="40" language="java" name="org.apache.axis.client.Stub" project="X_WS_SOAPClient" 
+    file="A:/projects/pgworkspace/X_WS_SOAPClient/WebContent/WEB-INF/lib/axis.jar" binary="true" label="_stub1" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="1337"/>    
+    </execution>  
+  </object>  
+  <object id="41" language="java" name="java.net.URL" project="X_WS_SOAPClient" 
+    file="X:/Java/jdk6_x64_u26/jre/lib/rt.jar" binary="true" label="endpoint" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="1201"/>    
+    </execution>  
+  </object>  
+  <object id="42" language="java" name="com.pg.ws.basics.HelloServiceLocator" project="X_WS_SOAPClient" 
+    file="/X_WS_SOAPClient/src/com/pg/ws/basics/HelloServiceLocator.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
       <position height="627" width="0" x="0" y="365"/>    
     </execution>    
-    <execution id="27">      
+    <execution id="46">      
       <position height="178" width="0" x="0" y="793"/>    
     </execution>    
-    <execution id="33">      
+    <execution id="52">      
       <position height="21" width="0" x="0" y="929"/>    
     </execution>  
   </object>  
-  <object id="34" language="java" name="com.pg.ws.basics.HelloSoapBindingStub" project="X_WS_SOAPClient" 
+  <object id="53" language="java" name="com.pg.ws.basics.HelloSoapBindingStub" project="X_WS_SOAPClient" 
     file="/X_WS_SOAPClient/src/com/pg/ws/basics/HelloSoapBindingStub.java" binary="false" label="_stub" type="class" 
     autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="29">      
+    <execution id="48">      
       <position height="21" width="0" x="0" y="824"/>    
     </execution>    
-    <execution id="31">      
+    <execution id="50">      
       <position height="21" width="0" x="0" y="866"/>    
-    </execution>  
-  </object>  
-  <object id="35" language="java" name="java.net.URL" project="X_WS_SOAPClient" 
-    file="X:/Java/jdk6_x64_u26/jre/lib/rt.jar" binary="true" label="&lt;static&gt;" type="class" autoSize="true">    
-    <position height="0" width="0" x="0" y="0"/>    
-    <execution id="25">      
-      <position height="365" width="0" x="0" y="386"/>    
     </execution>    
-    <execution id="37">      
-      <position height="302" width="0" x="0" y="428"/>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="1295"/>    
     </execution>    
     <execution id="39">      
+      <position height="691" width="132" x="867" y="1430"/>    
+    </execution>    
+    <execution id="55">      
+      <position height="21" width="0" x="0" y="1472"/>    
+    </execution>    
+    <execution id="75">      
+      <position height="21" width="0" x="0" y="1902"/>    
+    </execution>    
+    <execution id="77">      
+      <position height="21" width="0" x="0" y="1954"/>    
+    </execution>    
+    <execution id="81">      
+      <position height="21" width="0" x="0" y="2048"/>    
+    </execution>  
+  </object>  
+  <object id="84" language="java" name="org.apache.axis.client.Call" project="X_WS_SOAPClient" 
+    file="A:/projects/pgworkspace/X_WS_SOAPClient/WebContent/WEB-INF/lib/axis.jar" binary="true" label="_call" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="57">      
+      <position height="21" width="0" x="0" y="1503"/>    
+    </execution>    
+    <execution id="59">      
+      <position height="21" width="0" x="0" y="1545"/>    
+    </execution>    
+    <execution id="61">      
+      <position height="21" width="0" x="0" y="1587"/>    
+    </execution>    
+    <execution id="63">      
+      <position height="21" width="0" x="0" y="1629"/>    
+    </execution>    
+    <execution id="65">      
+      <position height="21" width="0" x="0" y="1671"/>    
+    </execution>    
+    <execution id="67">      
+      <position height="21" width="0" x="0" y="1713"/>    
+    </execution>    
+    <execution id="69">      
+      <position height="21" width="0" x="0" y="1755"/>    
+    </execution>    
+    <execution id="71">      
+      <position height="21" width="0" x="0" y="1797"/>    
+    </execution>    
+    <execution id="79">      
+      <position height="21" width="0" x="0" y="1985"/>    
+    </execution>  
+  </object>  
+  <object id="85" language="java" name="javax.xml.namespace.QName" project="X_WS_SOAPClient" 
+    file="X:/Java/jdk6_x64_u26/jre/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="73">      
+      <position height="21" width="0" x="0" y="1839"/>    
+    </execution>  
+  </object>  
+  <object id="86" language="java" name="org.apache.axis.utils.JavaUtils" project="X_WS_SOAPClient" 
+    file="A:/projects/pgworkspace/X_WS_SOAPClient/WebContent/WEB-INF/lib/axis.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="83">      
+      <position height="21" width="0" x="0" y="2079"/>    
+    </execution>  
+  </object>  
+  <object id="87" language="java" name="java.net.URL" project="X_WS_SOAPClient" 
+    file="X:/Java/jdk6_x64_u26/jre/lib/rt.jar" binary="true" label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="44">      
+      <position height="365" width="0" x="0" y="386"/>    
+    </execution>    
+    <execution id="89">      
+      <position height="302" width="0" x="0" y="428"/>    
+    </execution>    
+    <execution id="91">      
       <position height="229" width="0" x="0" y="480"/>    
     </execution>    
-    <execution id="41">      
+    <execution id="93">      
       <position height="21" width="0" x="0" y="532"/>    
     </execution>    
-    <execution id="43">      
+    <execution id="95">      
       <position height="21" width="0" x="0" y="584"/>    
     </execution>    
-    <execution id="45">      
+    <execution id="97">      
       <position height="21" width="0" x="0" y="636"/>    
     </execution>  
   </object>  
-  <object id="48" language="java" name="java.net.URLStreamHandler" project="X_WS_SOAPClient" 
+  <object id="100" language="java" name="java.net.URLStreamHandler" project="X_WS_SOAPClient" 
     file="X:/Java/jdk6_x64_u26/jre/lib/rt.jar" binary="true" label="handler" type="class" autoSize="true">    
     <position height="0" width="0" x="0" y="0"/>    
-    <execution id="47">      
+    <execution id="99">      
       <position height="21" width="0" x="0" y="667"/>    
     </execution>  
   </object>  
-  <object id="49" language="java" name="javax.xml.rpc.Stub" project="X_WS_SOAPClient" 
+  <object id="101" language="java" name="javax.xml.rpc.Stub" project="X_WS_SOAPClient" 
     file="A:/projects/pgworkspace/X_WS_SOAPClient/WebContent/WEB-INF/lib/jaxrpc.jar" binary="true" type="interface" 
     autoSize="true">    
-    <position height="0" width="0" x="0" y="0"/>    
-    <execution id="16">      
-      <position height="21" width="0" x="0" y="1013"/>    
-    </execution>  
+    <position height="0" width="0" x="0" y="0"/>  
   </object>  
-  <object id="50" language="java" name="javax.xml.rpc.Stub" project="X_WS_SOAPClient" 
+  <object id="102" language="java" name="javax.xml.rpc.Stub" project="X_WS_SOAPClient" 
     file="A:/projects/pgworkspace/X_WS_SOAPClient/WebContent/WEB-INF/lib/jaxrpc.jar" binary="true" type="interface" 
     autoSize="true">    
-    <position height="0" width="0" x="0" y="0"/>    
-    <execution id="18">      
-      <position height="21" width="0" x="0" y="1055"/>    
-    </execution>  
+    <position height="0" width="0" x="0" y="0"/>  
   </object>  
   <message id="3" operation="sayHello(java.lang.String):java.lang.String">    
     <end type="SOURCE" refId="2"/>    
@@ -115,72 +211,164 @@
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="7"/>  
   </message>  
-  <message id="9" operation="_initHelloProxy():void">    
+  <message id="10" operation="_initHelloProxy():void">    
     <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="10"/>  
+    <end type="TARGET" refId="11"/>  
   </message>  
-  <message id="11" operation="HelloServiceLocator()">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="12"/>  
+  <message id="12" operation="sayHello(java.lang.String):java.lang.String">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
   </message>  
-  <message id="13" operation="getHello():com.pg.ws.basics.Hello">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="14"/>  
+  <message id="14" operation="getHello():com.pg.ws.basics.Hello">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
   </message>  
-  <message id="15" operation="_setProperty(java.lang.String,java.lang.Object):void">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="16"/>  
-  </message>  
-  <message id="17" operation="_getProperty(java.lang.String):java.lang.Object">    
-    <end type="SOURCE" refId="10"/>    
+  <message id="17" operation="setEndpoint(java.lang.String):void">    
+    <end type="SOURCE" refId="16"/>    
     <end type="TARGET" refId="18"/>  
   </message>  
-  <message id="20" operation="setEndpoint(java.lang.String):void">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="21"/>  
+  <message id="19" operation="_initHelloProxy():void">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="20"/>  
   </message>  
-  <message id="24" operation="URL(java.lang.String)">    
-    <end type="SOURCE" refId="14"/>    
+  <message id="21" operation="sayHello(java.lang.String):java.lang.String">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="22" operation="HelloServiceLocator()">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="getHello():com.pg.ws.basics.Hello">    
+    <end type="SOURCE" refId="20"/>    
     <end type="TARGET" refId="25"/>  
   </message>  
-  <message id="26" operation="getHello(java.net.URL):com.pg.ws.basics.Hello">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="27"/>  
-  </message>  
-  <message id="28" operation="HelloSoapBindingStub(java.net.URL,javax.xml.rpc.Service)">    
-    <end type="SOURCE" refId="27"/>    
+  <message id="28" operation="URL(java.lang.String)">    
+    <end type="SOURCE" refId="25"/>    
     <end type="TARGET" refId="29"/>  
   </message>  
-  <message id="30" operation="setPortName(java.lang.String):void">    
-    <end type="SOURCE" refId="27"/>    
+  <message id="30" operation="getHello(java.net.URL):com.pg.ws.basics.Hello">    
+    <end type="SOURCE" refId="25"/>    
     <end type="TARGET" refId="31"/>  
   </message>  
-  <message id="32" operation="getHelloWSDDServiceName():java.lang.String">    
-    <end type="SOURCE" refId="27"/>    
+  <message id="32" operation="HelloSoapBindingStub(java.net.URL,javax.xml.rpc.Service)">    
+    <end type="SOURCE" refId="31"/>    
     <end type="TARGET" refId="33"/>  
   </message>  
-  <message id="36" operation="URL(java.net.URL,java.lang.String)">    
-    <end type="SOURCE" refId="25"/>    
+  <message id="34" operation="setPortName(java.lang.String):void">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="getHelloWSDDServiceName():java.lang.String">    
+    <end type="SOURCE" refId="31"/>    
     <end type="TARGET" refId="37"/>  
   </message>  
-  <message id="38" operation="URL(java.net.URL,java.lang.String,java.net.URLStreamHandler)">    
-    <end type="SOURCE" refId="37"/>    
+  <message id="38" operation="sayHello(java.lang.String):java.lang.String">    
+    <end type="SOURCE" refId="31"/>    
     <end type="TARGET" refId="39"/>  
   </message>  
-  <message id="40" operation="checkSpecifyHandler(java.lang.SecurityManager):void">    
-    <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="41"/>  
+  <message id="43" operation="URL(java.lang.String)">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="44"/>  
   </message>  
-  <message id="42" operation="isValidProtocol(java.lang.String):boolean">    
-    <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="43"/>  
+  <message id="45" operation="getHello(java.net.URL):com.pg.ws.basics.Hello">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="46"/>  
   </message>  
-  <message id="44" operation="getURLStreamHandler(java.lang.String):java.net.URLStreamHandler">    
-    <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="45"/>  
+  <message id="47" operation="HelloSoapBindingStub(java.net.URL,javax.xml.rpc.Service)">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="48"/>  
   </message>  
-  <message id="46" operation="parseURL(java.net.URL,java.lang.String,int,int):void">    
+  <message id="49" operation="setPortName(java.lang.String):void">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="50"/>  
+  </message>  
+  <message id="51" operation="getHelloWSDDServiceName():java.lang.String">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="52"/>  
+  </message>  
+  <message id="54" operation="createCall():org.apache.axis.client.Call">    
     <end type="SOURCE" refId="39"/>    
-    <end type="TARGET" refId="47"/>  
+    <end type="TARGET" refId="55"/>  
+  </message>  
+  <message id="56" operation="setOperation(org.apache.axis.description.OperationDesc):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="57"/>  
+  </message>  
+  <message id="58" operation="setUseSOAPAction(boolean):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="59"/>  
+  </message>  
+  <message id="60" operation="setSOAPActionURI(java.lang.String):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="61"/>  
+  </message>  
+  <message id="62" operation="setEncodingStyle(java.lang.String):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="63"/>  
+  </message>  
+  <message id="64" operation="setProperty(java.lang.String,java.lang.Object):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="65"/>  
+  </message>  
+  <message id="66" operation="setProperty(java.lang.String,java.lang.Object):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="67"/>  
+  </message>  
+  <message id="68" operation="setSOAPVersion(org.apache.axis.soap.SOAPConstants):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="69"/>  
+  </message>  
+  <message id="70" operation="setOperationName(javax.xml.namespace.QName):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="71"/>  
+  </message>  
+  <message id="72" operation="QName(java.lang.String,java.lang.String)">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="73"/>  
+  </message>  
+  <message id="74" operation="setRequestHeaders(org.apache.axis.client.Call):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="75"/>  
+  </message>  
+  <message id="76" operation="setAttachments(org.apache.axis.client.Call):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="77"/>  
+  </message>  
+  <message id="78" operation="invoke(java.lang.Object[]):java.lang.Object">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="79"/>  
+  </message>  
+  <message id="80" operation="extractAttachments(org.apache.axis.client.Call):void">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="81"/>  
+  </message>  
+  <message id="82" operation="convert(java.lang.Object,java.lang.Class):java.lang.Object">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="83"/>  
+  </message>  
+  <message id="88" operation="URL(java.net.URL,java.lang.String)">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="89"/>  
+  </message>  
+  <message id="90" operation="URL(java.net.URL,java.lang.String,java.net.URLStreamHandler)">    
+    <end type="SOURCE" refId="89"/>    
+    <end type="TARGET" refId="91"/>  
+  </message>  
+  <message id="92" operation="checkSpecifyHandler(java.lang.SecurityManager):void">    
+    <end type="SOURCE" refId="91"/>    
+    <end type="TARGET" refId="93"/>  
+  </message>  
+  <message id="94" operation="isValidProtocol(java.lang.String):boolean">    
+    <end type="SOURCE" refId="91"/>    
+    <end type="TARGET" refId="95"/>  
+  </message>  
+  <message id="96" operation="getURLStreamHandler(java.lang.String):java.net.URLStreamHandler">    
+    <end type="SOURCE" refId="91"/>    
+    <end type="TARGET" refId="97"/>  
+  </message>  
+  <message id="98" operation="parseURL(java.net.URL,java.lang.String,int,int):void">    
+    <end type="SOURCE" refId="91"/>    
+    <end type="TARGET" refId="99"/>  
   </message>
 </sequence-diagram>
