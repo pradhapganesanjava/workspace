@@ -13,7 +13,7 @@ bin/
 #Eclipse folders
 .settings/
 .metadata/
-.classpath
+#.classpath
 #.project
 
 #go figure...
