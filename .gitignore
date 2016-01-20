@@ -14,7 +14,7 @@ bin/
 .settings/
 .metadata/
 .classpath
-.project
+#.project
 
 #go figure...
 /.z
