@@ -37,7 +37,7 @@ public class Catalog {
 
 	@GET
 	@Path("/{catalogId}")
-	@Produces(MediaType.APPLICATION_JSON + "," + MediaType.APPLICATION_XML)
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public String getCatalog(@PathParam("catalogId") String catalogId,
 			@QueryParam("ftype") String mType) {
 

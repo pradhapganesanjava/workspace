@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://implsei.simpleserver.ws.pg.com/" xmlns:tns="http://implsei.simpleserver.ws.pg.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="sayBye" type="tns:sayBye"/>
+
+  <xs:element name="sayByeResponse" type="tns:sayByeResponse"/>
+
+  <xs:element name="sayHi" type="tns:sayHi"/>
+
+  <xs:element name="sayHiResponse" type="tns:sayHiResponse"/>
+
+  <xs:complexType name="sayHi">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayHiResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayBye">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="sayByeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -68,4 +68,9 @@ public class MessageBo {
 		this.commentBo = commentBo;
 		return this;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("Id:%s, Message:%s, createdBy:%s, createdDt:%s", this.Id, this.message,this.createdBy, this.createdDt);
+	}
 }

@@ -1,0 +1,3 @@
+
+X_RESTfulWS project was created as Maven Web project, and converted eclipse version of Web project.
+We have "X_RESTfulWS\WebContent" as well as  "X_RESTfulWS\src\main\webapp" - the project either regular WebDynamicProject nor Maven project. 

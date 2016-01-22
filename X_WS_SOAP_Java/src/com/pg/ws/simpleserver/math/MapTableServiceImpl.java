@@ -6,7 +6,7 @@ import javax.jws.WebService;
 /***
  * 
  * wsgen -cp . -wsdl -r ../wsdl -keep -s ../src com.pg.ws.simpleserver.math.MapTableServiceImpl
- * wsimport -keep -p com.pg.ws.simpleclient.math -Xnocompile file:../wsdl/MapTableServiceImplService.wsd
+ * wsimport -keep -p com.pg.ws.simpleclient.math -Xnocompile file:../wsdl/MapTableServiceImplService.wsdl
  * 
  * @author pganesan
  *
