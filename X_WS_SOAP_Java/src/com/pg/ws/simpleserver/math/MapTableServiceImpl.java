@@ -1,5 +1,6 @@
 package com.pg.ws.simpleserver.math;
 
+import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 
@@ -16,6 +17,7 @@ import javax.jws.WebService;
 @WebService(endpointInterface="com.pg.ws.simpleserver.math.MapTableService")
 public class MapTableServiceImpl {
 
+	@WebMethod()
 	public String getSquare(Integer number){
 		return new Integer(number*number).toString();
 	}

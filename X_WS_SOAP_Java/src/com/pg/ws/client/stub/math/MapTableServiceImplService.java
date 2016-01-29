@@ -1,5 +1,5 @@
 
-package com.pg.ws.simpleclient.math;
+package com.pg.ws.client.stub.math;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -23,13 +23,13 @@ public class MapTableServiceImplService
 {
 
     private final static URL MAPTABLESERVICEIMPLSERVICE_WSDL_LOCATION;
-    private final static Logger logger = Logger.getLogger(com.pg.ws.simpleclient.math.MapTableServiceImplService.class.getName());
+    private final static Logger logger = Logger.getLogger(com.pg.ws.client.stub.math.MapTableServiceImplService.class.getName());
 
     static {
         URL url = null;
         try {
             URL baseUrl;
-            baseUrl = com.pg.ws.simpleclient.math.MapTableServiceImplService.class.getResource(".");
+            baseUrl = com.pg.ws.client.stub.math.MapTableServiceImplService.class.getResource(".");
             url = new URL(baseUrl, "file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/MapTableServiceImplService.wsdl");
         } catch (MalformedURLException e) {
             logger.warning("Failed to create URL for the wsdl Location: 'file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/MapTableServiceImplService.wsdl', retrying as a local file");

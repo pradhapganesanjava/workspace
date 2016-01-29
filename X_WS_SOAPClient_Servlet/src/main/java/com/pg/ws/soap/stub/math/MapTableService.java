@@ -1,5 +1,5 @@
 
-package com.pg.ws.simpleclient.math;
+package com.pg.ws.soap.stub.math;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -31,8 +31,8 @@ public interface MapTableService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getSquare", targetNamespace = "http://math.simpleserver.ws.pg.com/", className = "com.pg.ws.simpleclient.math.GetSquare")
-    @ResponseWrapper(localName = "getSquareResponse", targetNamespace = "http://math.simpleserver.ws.pg.com/", className = "com.pg.ws.simpleclient.math.GetSquareResponse")
+    @RequestWrapper(localName = "getSquare", targetNamespace = "http://math.simpleserver.ws.pg.com/", className = "com.pg.ws.soap.stub.math.GetSquare")
+    @ResponseWrapper(localName = "getSquareResponse", targetNamespace = "http://math.simpleserver.ws.pg.com/", className = "com.pg.ws.soap.stub.math.GetSquareResponse")
     public String getSquare(
         @WebParam(name = "arg0", targetNamespace = "")
         Integer arg0);

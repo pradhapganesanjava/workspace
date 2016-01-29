@@ -1,5 +1,5 @@
 
-package com.pg.ws.simpleclient.math;
+package com.pg.ws.soap.stub.math;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -10,7 +10,7 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.pg.ws.simpleclient.math package. 
+ * generated in the com.pg.ws.soap.stub.math package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -28,18 +28,10 @@ public class ObjectFactory {
     private final static QName _GetSquare_QNAME = new QName("http://math.simpleserver.ws.pg.com/", "getSquare");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.pg.ws.simpleclient.math
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.pg.ws.soap.stub.math
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link GetSquareResponse }
-     * 
-     */
-    public GetSquareResponse createGetSquareResponse() {
-        return new GetSquareResponse();
     }
 
     /**
@@ -48,6 +40,14 @@ public class ObjectFactory {
      */
     public GetSquare createGetSquare() {
         return new GetSquare();
+    }
+
+    /**
+     * Create an instance of {@link GetSquareResponse }
+     * 
+     */
+    public GetSquareResponse createGetSquareResponse() {
+        return new GetSquareResponse();
     }
 
     /**
