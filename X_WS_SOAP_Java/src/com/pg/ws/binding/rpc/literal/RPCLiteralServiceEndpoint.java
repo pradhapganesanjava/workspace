@@ -2,11 +2,15 @@ package com.pg.ws.binding.rpc.literal;
 
 import javax.xml.ws.Endpoint;
 
+import com.pg.ws.binding.bo.ExchangeRateBO;
+import com.pg.ws.binding.bo.ExchangeRateRequestBO;
+
 public class RPCLiteralServiceEndpoint {
 
 	public static void main(String... str) {
-		// testStandaloneRPCLiteral();
-		Endpoint.publish("http://localhost:7777/style/rpcliteral", new RPCLiteralServiceImpl());
+		//testStandaloneRPCLiteral();
+		
+		Endpoint.publish("http://localhost:7733/style/rpcliteral", new RPCLiteralServiceImpl());
 	}
 
 

@@ -1,22 +1,19 @@
-package com.pg.ws.binding.rpc.literal;
+package com.pg.ws.binding.bo;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-//@XmlRootElement
-public class ExchangeRateBO {
+public class ExchangeRateRequestBO {
 
 	//INR, USD, EUR
 	private String currency;
 	private Double amount;
 	
-	public ExchangeRateBO() {
+	public ExchangeRateRequestBO() {
+		this(null, 0.0);
 	}
-	
-	public ExchangeRateBO(String currency, Double amount) {
+
+	public ExchangeRateRequestBO(String currency, Double amount){
 		this.currency = currency;
 		this.amount = amount;
 	}
-	
 	
 	public String getCurrency() {
 		return currency;
@@ -30,10 +27,9 @@ public class ExchangeRateBO {
 	public void setAmount(Double amount) {
 		this.amount = amount;
 	}
-	
 	@Override
 	public String toString() {
-		return String.format("ExchangeRateBO [currency:%s, amount:%f ]", currency,amount);
+		return String.format("ExchangeRateRequestBO: [currency:%s, amount:%f ]", currency,amount);
 	}
-}
 
+}

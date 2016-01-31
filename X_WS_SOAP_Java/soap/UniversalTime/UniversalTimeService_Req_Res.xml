@@ -1,0 +1,53 @@
+<!--  DOCUMENT LITERAL WRAPPER -->
+
+<?xml version="1.0"  standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:getCurrentTime xmlns:ns2="http://universaltime.handler.ws.pg.com/">
+			<arg0>USA</arg0>
+			<arg1>CST</arg1>
+		</ns2:getCurrentTime>
+	</S:Body>
+</S:Envelope>
+
+<?xml version="1.0"  standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:getCurrentTimeResponse xmlns:ns2="http://universaltime.handler.ws.pg.com/">
+			<return>1/30/16 7:29 PM</return>
+		</ns2:getCurrentTimeResponse>
+	</S:Body>
+</S:Envelope>
+
+<!-- WSDL -->
+<types>
+	<xsd:schema>
+		<xsd:import namespace="http://universaltime.handler.ws.pg.com/"
+			schemaLocation="http://localhost:7722/style/universaltime?xsd=1"></xsd:import>
+	</xsd:schema>
+</types>
+<message name="getCurrentTime">
+	<part name="parameters" element="tns:getCurrentTime"></part>
+</message>
+<message name="getCurrentTimeResponse">
+	<part name="parameters" element="tns:getCurrentTimeResponse"></part>
+</message>
+<portType name="UniversalTimeService">
+	<operation name="getCurrentTime">
+		<input message="tns:getCurrentTime"></input>
+		<output message="tns:getCurrentTimeResponse"></output>
+	</operation>
+</portType>
+<binding name="UniversalTimeServiceImplPortBinding" type="tns:UniversalTimeService">
+	<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
+		style="document"></soap:binding>
+	<operation name="getCurrentTime">
+		<soap:operation soapAction=""></soap:operation>
+		<input>
+			<soap:body use="literal"></soap:body>
+		</input>
+		<output>
+			<soap:body use="literal"></soap:body>
+		</output>
+	</operation>
+</binding>

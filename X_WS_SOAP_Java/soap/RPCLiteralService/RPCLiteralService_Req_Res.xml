@@ -1,0 +1,61 @@
+<!-- style:RPC use:Literal parameterStyle:Wrapper -->
+
+<?xml version="1.0"  standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:getExchangeRate xmlns:ns2="http://literal.rpc.binding.ws.pg.com/">
+			<arg0>
+				<amount>1.0</amount>
+				<currency>USD</currency>
+			</arg0>
+			<arg1>INR</arg1>
+		</ns2:getExchangeRate>
+	</S:Body>
+</S:Envelope>
+
+<?xml version="1.0"  standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:getExchangeRateResponse xmlns:ns2="http://literal.rpc.binding.ws.pg.com/">
+			<return>
+				<amount>68.0</amount>
+				<currency>INR</currency>
+			</return>
+		</ns2:getExchangeRateResponse>
+	</S:Body>
+</S:Envelope>
+
+
+<!-- WSDL -->
+<types>
+	<xsd:schema>
+		<xsd:import namespace="http://literal.rpc.binding.ws.pg.com/"
+			schemaLocation="http://localhost:7777/style/rpcliteral?xsd=1"></xsd:import>
+	</xsd:schema>
+</types>
+<message name="getExchangeRate">
+	<part name="arg0" type="tns:exchangeRateRequestBO"></part>
+	<part name="arg1" type="xsd:string"></part>
+</message>
+<message name="getExchangeRateResponse">
+	<part name="return" type="tns:exchangeRateBO"></part>
+</message>
+<portType name="RPCLiteralService">
+	<operation name="getExchangeRate" parameterOrder="arg0 arg1">
+		<input message="tns:getExchangeRate"></input>
+		<output message="tns:getExchangeRateResponse"></output>
+	</operation>
+</portType>
+<binding name="RPCLiteralServiceImplPortBinding" type="tns:RPCLiteralService">
+	<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
+		style="rpc"></soap:binding>
+	<operation name="getExchangeRate">
+		<soap:operation soapAction=""></soap:operation>
+		<input>
+			<soap:body use="literal" namespace="http://literal.rpc.binding.ws.pg.com/"></soap:body>
+		</input>
+		<output>
+			<soap:body use="literal" namespace="http://literal.rpc.binding.ws.pg.com/"></soap:body>
+		</output>
+	</operation>
+</binding>

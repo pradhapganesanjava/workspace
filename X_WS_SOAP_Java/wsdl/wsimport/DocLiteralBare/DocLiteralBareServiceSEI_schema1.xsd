@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.6 in JDK 6. --><xs:schema xmlns:tns="http://bare.literal.doc.binding.ws.pg.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://bare.literal.doc.binding.ws.pg.com/">
+
+<xs:element name="getExchangeRate" nillable="true" type="tns:exchangeRateRequestBO"></xs:element>
+
+<xs:element name="getExchangeRateResponse" nillable="true" type="tns:exchangeRateBO"></xs:element>
+
+<xs:complexType name="exchangeRateRequestBO">
+<xs:sequence>
+<xs:element name="amount" type="xs:double" minOccurs="0"></xs:element>
+<xs:element name="currency" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="exchangeRateBO">
+<xs:sequence>
+<xs:element name="amount" type="xs:double" minOccurs="0"></xs:element>
+<xs:element name="currency" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,8 +1,10 @@
 package com.pg.ws.binding.rpc.literal;
 
-import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
+
+import com.pg.ws.binding.bo.ExchangeRateBO;
+import com.pg.ws.binding.bo.ExchangeRateRequestBO;
 
 @WebService
 @SOAPBinding(style=SOAPBinding.Style.RPC, use=SOAPBinding.Use.LITERAL)

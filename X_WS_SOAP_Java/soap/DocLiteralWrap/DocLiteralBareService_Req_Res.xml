@@ -1,0 +1,58 @@
+<?xml version="1.0"  standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:getExchangeRate xmlns:ns2="http://wrap.literal.doc.binding.ws.pg.com/">
+			<arg0>
+				<amount>1.0</amount>
+				<currency>USD</currency>
+			</arg0>
+		</ns2:getExchangeRate>
+	</S:Body>
+</S:Envelope>
+
+<?xml version="1.0"  standalone="no"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:getExchangeRateResponse
+			xmlns:ns2="http://wrap.literal.doc.binding.ws.pg.com/">
+			<return>
+				<amount>68.0</amount>
+				<currency>INR</currency>
+			</return>
+		</ns2:getExchangeRateResponse>
+	</S:Body>
+</S:Envelope>
+
+<!-- - WSDL -->
+
+<types>
+	<xsd:schema>
+		<xsd:import namespace="http://wrap.literal.doc.binding.ws.pg.com/"
+			schemaLocation="http://localhost:7744/style/docliteralwrap?xsd=1"></xsd:import>
+	</xsd:schema>
+</types>
+<message name="getExchangeRate">
+	<part name="parameters" element="tns:getExchangeRate"></part>
+</message>
+<message name="getExchangeRateResponse">
+	<part name="parameters" element="tns:getExchangeRateResponse"></part>
+</message>
+<portType name="DocLiteralWrapService">
+	<operation name="getExchangeRate">
+		<input message="tns:getExchangeRate"></input>
+		<output message="tns:getExchangeRateResponse"></output>
+	</operation>
+</portType>
+<binding name="DocLiteralWrapServiceImplPortBinding" type="tns:DocLiteralWrapService">
+	<soap:binding transport="http://schemas.xmlsoap.org/soap/http"
+		style="document"></soap:binding>
+	<operation name="getExchangeRate">
+		<soap:operation soapAction=""></soap:operation>
+		<input>
+			<soap:body use="literal"></soap:body>
+		</input>
+		<output>
+			<soap:body use="literal"></soap:body>
+		</output>
+	</operation>
+</binding>

@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "RPCLiteralServiceSEI", targetNamespace = "http://literal.rpc.binding.ws.pg.com/", wsdlLocation = "file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/wsimport/RPCLiteralServiceSEI.wsdl")
+@WebServiceClient(name = "RPCLiteralServiceSEI", targetNamespace = "http://literal.rpc.binding.ws.pg.com/", wsdlLocation = "file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/wsimport/rpcliteralservice/RPCLiteralServiceSEI.wsdl")
 public class RPCLiteralServiceSEI
     extends Service
 {
@@ -30,9 +30,9 @@ public class RPCLiteralServiceSEI
         try {
             URL baseUrl;
             baseUrl = com.pg.ws.client.binding.rpc.literal.RPCLiteralServiceSEI.class.getResource(".");
-            url = new URL(baseUrl, "file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/wsimport/RPCLiteralServiceSEI.wsdl");
+            url = new URL(baseUrl, "file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/wsimport/rpcliteralservice/RPCLiteralServiceSEI.wsdl");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/wsimport/RPCLiteralServiceSEI.wsdl', retrying as a local file");
+            logger.warning("Failed to create URL for the wsdl Location: 'file:/A:/projects/pgworkspace/X_WS_SOAP_Java/wsdl/wsimport/rpcliteralservice/RPCLiteralServiceSEI.wsdl', retrying as a local file");
             logger.warning(e.getMessage());
         }
         RPCLITERALSERVICESEI_WSDL_LOCATION = url;
